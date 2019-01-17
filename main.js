@@ -17,22 +17,18 @@ var displayCard = function() {
 function drawMemory(drawCards) {
   drawCards = [];
   for (let i = 1; i < 6; i++) {
-    var htmlCards = `<div class="card" id="${i}"><div class="inside"><div class="front"><img src="'1x1/${i}.jpg'"></div>
+    var htmlCards = `<div class="card" id="${i}"><div cl¨¨ass="inside"><div class="front"><img src="1x1/${i}.jpg"></div>
         <div class="back"><img src="1x1/baksida.jpg"\ alt="?"></div></div>
         </div>`;
     drawCards.push(htmlCards);
-    console.log(drawCards);
   };
-  drawHtmlMemory();
-    console.log(drawCards);
+  drawHtmlMemory(drawCards);
   return drawCards;
-
 };
 
 function drawHtmlMemory(drawCards) {
   //get memory and save it in memorydiv then
   //write out drawCards in memorydiv
-  console.log(drawCards);
   document.getElementById("memory").innerHTML = drawCards;
   }
 

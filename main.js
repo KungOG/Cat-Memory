@@ -56,25 +56,10 @@ game.appendChild(grid);
 
 gameGrid.forEach(item => {
   const { name, img } = item;
-  for (let i = 1; i < 6; i++) {
-    var htmlCards =
-    `<div class="card" id="${i}">
-      <div class="inside">
-        <div class="front"><img src="1x1/${i}.jpg"></div>
-        <div class="back"><img src="1x1/baksida.jpg"\ alt="?"></div>
-      </div>
-    </div>`;
-    drawCards.push(htmlCards);
-  };
-  drawHtmlMemory(drawCards);
-  return drawCards;
-};
 
   const card = document.createElement('div');
   card.classList.add('card');
   card.dataset.name = name;
-  document.getElementById("memory").innerHTML = drawCards;
-  }
 
   const front = document.createElement('div');
   front.classList.add('front');
@@ -93,6 +78,7 @@ const match = () => {
   selected.forEach(card => {
     card.classList.add('match');
   });
+};
 
 const resetGuesses = () => {
   firstGuess = '';

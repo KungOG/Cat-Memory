@@ -1,17 +1,13 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
+} 
 body {
-  margin: 20px 0;
+  margin: 5px 0;
   background: black;
 }
-
 .grid {
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,7 +18,6 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
-
 .card {
   position: relative;
   -webkit-transition: all .4s linear;
@@ -32,25 +27,18 @@ body {
           transform-style: preserve-3d;
   margin: 5px;
 }
-
-.card,
-.back,
-.front {
+.card, .back, .front {
   height: 150px;
   width: 150px;
 }
-
-.back,
-.front {
+.back, .front {
   position: absolute;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
-
 .front {
   background: black url('img/baksida_gold4.jpg') no-repeat center center / contain;
 }
-
 .back {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
@@ -59,12 +47,23 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-
 .selected {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
-
 .match .front {
   background: none !important;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .card, .back, .front {
+        height: 75px;
+        width: 75px;
+      }
+    
 }

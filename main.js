@@ -54,8 +54,11 @@ const gameGrid = catsArray
 let firstGuess = '';
 let secondGuess = '';
 let count = 0;
+let matchCount = 0;
 let previousTarget = null;
 let delay = 1200;
+let popup = document.getElementById('winpop')
+let close = document.querySelector('.close')
 
 const game = document.getElementById('game');
 const grid = document.createElement('section');
@@ -85,6 +88,8 @@ const match = () => {
   const selected = document.querySelectorAll('.selected');
   selected.forEach(card => {
     card.classList.add('match');
+    matchCount++;
+    console.log('It is a match!');
   });
 };
 
@@ -135,3 +140,46 @@ grid.addEventListener('click', event => {
   }
 
 });
+function congratz () {
+    if (matchCount.length == 2) {
+        popup.classList.add("show");
+        closeModal();
+    };
+}
+function closeModal () {
+    close.addEventListener('click', function(e){
+        modal.classList.remove('show');
+
+    })
+}
+/*
+var second = 0, minute = 0;
+var timer = document.querySelector('.timer');
+var interval;
+function startTimer() {
+    interval = setInterval(function() {
+        timer.innerHTML = minute+"mins "+second+"secs";
+        second++;
+        if (second == 60){
+            minute++;
+            second = 0;
+        }
+        if (minute == 60) {
+            hour++;
+            minute = 0;
+        }
+    }, 1000);
+}
+
+function moveCounter () {
+    moves++;
+    moveCounter.innerHTML = moves;
+
+    if (moves == 1) {
+        second = 0;
+        minute = 0;
+        hour = 0;
+        startTimer();
+    }
+}
+ */

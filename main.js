@@ -19,8 +19,8 @@ const catsArray = [{
         'img' : 'img/norna.jpg'
     },
     {
-        'name' : 'rocky',
-        'img' : 'img/rocky.jpg'
+        'name' : 'corona',
+        'img' : 'img/corona.jpg'
     },
     {
         'name' : 'rut',
@@ -37,6 +37,14 @@ const catsArray = [{
     {
         'name' : 'zefyrus',
         'img' : 'img/zefyrus.jpg'
+    }
+    {
+        'name' : 'kittens',
+        'img' : 'img/cats.jpg'
+    }
+    {
+        'name' : 'octarine',
+        'img' : 'img/octarine.jpg'
     }
 ];
 const gameGrid = catsArray

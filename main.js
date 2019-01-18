@@ -54,17 +54,19 @@ const gameGrid = catsArray
 let firstGuess = '';
 let secondGuess = '';
 let count = 0;
-let matchCount = 0;
 let previousTarget = null;
 let delay = 1200;
-let popup = document.getElementById('winpop')
-let close = document.querySelector('.close')
+
+let matchCount = 0;
+let popup = document.getElementById('winpop');
+let close = document.querySelector('.close');
 
 const game = document.getElementById('game');
 const grid = document.createElement('section');
 grid.setAttribute('class', 'grid');
 game.appendChild(grid);
 
+/* Makes the divs and the grid */
 gameGrid.forEach(item => {
   const { name, img } = item;
 
@@ -93,6 +95,7 @@ const match = () => {
   });
 };
 
+/* Reset the Guesses */
 const resetGuesses = () => {
   firstGuess = '';
   secondGuess = '';
@@ -105,6 +108,7 @@ const resetGuesses = () => {
   });
 };
 
+/* Checks if the clicks have a match or not */
 grid.addEventListener('click', event => {
 
   const clicked = event.target;
@@ -138,18 +142,19 @@ grid.addEventListener('click', event => {
     }
     previousTarget = clicked;
   }
-
 });
+
+/* Pop up code */
 function congratz () {
-    if (matchCount.length == 2) {
-        popup.classList.add("show");
+    if (matchCount == 2) {
+        popup.classList.add('show');
         closeModal();
+        console.log('majs')
     };
 }
 function closeModal () {
     close.addEventListener('click', function(e){
-        modal.classList.remove('show');
-
+        popup.classList.remove('show');
     })
 }
 /*
@@ -170,9 +175,10 @@ function startTimer() {
         }
     }, 1000);
 }
-
+/* Move Counter */
+/*
 function moveCounter () {
-    moves++;
+    matchCount++;
     moveCounter.innerHTML = moves;
 
     if (moves == 1) {

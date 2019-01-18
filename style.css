@@ -1,4 +1,4 @@
-.grid-container {
+.grid-container, #memory {
   display: grid;
   grid-template-columns: 30% 30% 30%;
   background-color: #dedad7;
@@ -22,4 +22,20 @@ img {
 body {
   margin: 0 auto;
   height: 100%;
+}
+
+.card {
+ width: 30%;
+}
+
+.inside {
+
+}
+
+.front {
+
+}
+
+.back {
+  
 }

@@ -17,9 +17,13 @@ var displayCard = function() {
 function drawMemory(drawCards) {
   drawCards = [];
   for (let i = 1; i < 6; i++) {
-    var htmlCards = `<div class="card" id="${i}"><div cl¨¨ass="inside"><div class="front"><img src="1x1/${i}.jpg"></div>
-        <div class="back"><img src="1x1/baksida.jpg"\ alt="?"></div></div>
-        </div>`;
+    var htmlCards =
+    `<div class="card" id="${i}">
+      <div class="inside">
+        <div class="front"><img src="1x1/${i}.jpg"></div>
+        <div class="back"><img src="1x1/baksida.jpg"\ alt="?"></div>
+      </div>
+    </div>`;
     drawCards.push(htmlCards);
   };
   drawHtmlMemory(drawCards);
@@ -34,4 +38,12 @@ function drawHtmlMemory(drawCards) {
 
 document.addEventListener('DOMContentLoaded', function() {
   drawMemory();
+
+
+
+
+
+
+
+
 });

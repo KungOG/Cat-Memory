@@ -31,17 +31,17 @@ const catsArray = [{
         'img' : 'img/samus.jpg'
     },
     {
-        'name' : 'tiger_02',
-        'img' : 'img/tiger_02.jpg'
+        'name' : 'tiger',
+        'img' : 'img/tiger.jpg'
     },
     {
         'name' : 'zefyrus',
         'img' : 'img/zefyrus.jpg'
-    }
+    },
     {
         'name' : 'kittens',
         'img' : 'img/cats.jpg'
-    }
+    },
     {
         'name' : 'octarine',
         'img' : 'img/octarine.jpg'

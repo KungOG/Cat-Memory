@@ -57,6 +57,7 @@ let count = 0;
 let previousTarget = null;
 let delay = 1200;
 
+let steps = document.querySelector('.steps');
 let matchCount = 0;
 let popup = document.getElementById('winpop');
 let close = document.querySelector('.close');
@@ -86,12 +87,18 @@ gameGrid.forEach(item => {
   card.appendChild(back);
 });
 
+/* Counts all the matches and if you have picked all 24 cards you get popup */
 const match = () => {
   const selected = document.querySelectorAll('.selected');
   selected.forEach(card => {
     card.classList.add('match');
-    matchCount++;
-    console.log('It is a match!');
+    matchCount++
+    if (matchCount == 2) {
+        congratz();
+        closeModal();
+        startTimer();
+        console.log('It is a match!');
+    }
   });
 };
 
@@ -118,9 +125,7 @@ grid.addEventListener('click', event => {
     clicked === previousTarget ||
     clicked.parentNode.classList.contains('selected') ||
     clicked.parentNode.classList.contains('match')
-  ) {
-    return;
-  }
+  ){  return; }
 
   if (count < 2) {
     count++;
@@ -146,18 +151,16 @@ grid.addEventListener('click', event => {
 
 /* Pop up code */
 function congratz () {
-    if (matchCount == 2) {
         popup.classList.add('show');
         closeModal();
-        console.log('majs')
-    };
 }
+
 function closeModal () {
     close.addEventListener('click', function(e){
         popup.classList.remove('show');
     })
 }
-/*
+
 var second = 0, minute = 0;
 var timer = document.querySelector('.timer');
 var interval;
@@ -175,17 +178,17 @@ function startTimer() {
         }
     }, 1000);
 }
-/* Move Counter */
-/*
-function moveCounter () {
-    matchCount++;
-    moveCounter.innerHTML = moves;
 
-    if (moves == 1) {
+/* Move Counter */
+function moveCounter () {
+    count++;
+    matchCount.innerHTML = steps;
+
+    if (count == 1) {
         second = 0;
         minute = 0;
         hour = 0;
         startTimer();
     }
 }
- */
+

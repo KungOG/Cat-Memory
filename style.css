@@ -75,7 +75,6 @@ h1 {
 
 .overlayh1 {
   pointer-events: none;
-
 }
 
 /*
@@ -90,7 +89,6 @@ h1 {
     background: white;
     transition: opacity 500ms;
     visibility: hidden;
-    opacity: 0;
 }
 .overlay:target {
 	visibility: visible;
@@ -128,8 +126,8 @@ h1 {
 	text-align: center;
 }
 .show {
-	visibility: visible !important;
-	opacity: 100 !important;
+    visibility: visible !important;
+    background: white;
 }
 
 /*

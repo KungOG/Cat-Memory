@@ -1,50 +1,50 @@
 const catsArray = [{
         'name' : 'fenris',
-        'img' : 'img/fenris.jpg'
+        'img' : 'img/fenris_y.jpg'
     },
     {
         'name' : 'findus',
-        'img' : 'img/findus.jpg'
+        'img' : 'img/findus_g.jpg'
     },
     {
         'name' : 'lotus',
-        'img' : 'img/lotus.jpg'
+        'img' : 'img/lotus_g.jpg'
     },
     {
         'name' : 'luvan',
-        'img' : 'img/luvan.jpg'
+        'img' : 'img/luvan_p.jpg'
     },
     {
         'name' : 'norna',
-        'img' : 'img/norna.jpg'
+        'img' : 'img/norna_o.jpg'
     },
     {
         'name' : 'corona',
-        'img' : 'img/corona.jpg'
+        'img' : 'img/corona_b.jpg'
     },
     {
         'name' : 'rut',
-        'img' : 'img/rut.jpg'
+        'img' : 'img/rut_r.jpg'
     },
     {
         'name' : 'samus',
-        'img' : 'img/samus.jpg'
+        'img' : 'img/samus_y.jpg'
     },
     {
         'name' : 'tiger',
-        'img' : 'img/tiger.jpg'
+        'img' : 'img/tiger_b.jpg'
     },
     {
         'name' : 'zefyrus',
-        'img' : 'img/zefyrus.jpg'
+        'img' : 'img/zefyrus_b.jpg'
     },
     {
-        'name' : 'kittens',
-        'img' : 'img/cats.jpg'
+        'name' : 'percy',
+        'img' : 'img/percy_t.jpg'
     },
     {
         'name' : 'octarine',
-        'img' : 'img/octarine.jpg'
+        'img' : 'img/octarine_b.jpg'
     }
 ];
 const gameGrid = catsArray
@@ -62,8 +62,11 @@ let matchCount = 0;
 let popup = document.getElementById('winpop');
 let close = document.querySelector('.close');
 
+const reload = document.getElementById('reload');
+
 const game = document.getElementById('game');
 const grid = document.createElement('section');
+
 grid.setAttribute('class', 'grid');
 game.appendChild(grid);
 
@@ -192,3 +195,11 @@ function moveCounter () {
     }
 }
 
+
+function restartGame() {
+  // reload?
+  //mdn: Force reloading the current page from the server
+location.reload(true);
+}
+
+reload.addEventListener('click', restartGame())

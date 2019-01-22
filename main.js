@@ -16,8 +16,6 @@ let matchCount = 0;
 let popup = document.getElementById('winpop');
 let close = document.querySelector('.close');
 
-const reload = document.getElementById('reload');
-
 const game = document.getElementById('game');
 const grid = document.createElement('section');
 
@@ -154,12 +152,8 @@ function moveCounter () {
     }
 }
 
-/*
-function restartGame() {
-  // reload?
-  //mdn: Force reloading the current page from the server
-location.reload(true);
-}
+document.getElementById('reload').addEventListener('click', restartGame);
 
-reload.addEventListener('click', restartGame())
-*/
+function restartGame() {
+  location.reload();
+}

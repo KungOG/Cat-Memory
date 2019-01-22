@@ -45,7 +45,7 @@ p {
         backface-visibility: hidden;
 }
 .front {
-    background: black url('img/baksida_goldcoin.jpg') no-repeat center center / contain;
+    background: black url('img/baksida_gold4.jpg') no-repeat center center / contain;
 }
 .back {
     -webkit-transform: rotateY(180deg);

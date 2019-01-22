@@ -73,8 +73,21 @@ h1 {
     top: 0;
 }
 
+/* 
+* Text in HTML
+*/
 .overlayh1 {
   pointer-events: none;
+}
+.steps {
+    color: white;
+    display: inline-block;
+    margin: 0 1rem;
+}
+.timer {
+    color: white;
+    display: inline-block;
+    margin: 0 1rem;
 }
 
 /*

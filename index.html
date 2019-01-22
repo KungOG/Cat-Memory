@@ -11,7 +11,7 @@
 <body>
     <div class="overlayh1"><h1 unselectable="on" class="noselect">Remember the Cats-game!</h1></div>
 
-    <div><p class="steps">0</p><p>steps</p></div>
+    <div class="steps"></div>
     <div class="timer"></div>
 
     <div id="game"></div>
@@ -20,7 +20,9 @@
             <h2>Wooho! Congratulations!</h2>
             <a class="close" href="#">X</a>
             <div class="innerPop">
-                    Frikkin' catsey! You got 'em all!
+                <p>Frikkin' catsey! You got 'em all!</p>
+                <p>You made <span id=totalMove> </span> steps! </p>
+                <p>in <span id=totalTime> </span> </p>
             </div>
             <button id="reload">Play again?</button>
         </div>

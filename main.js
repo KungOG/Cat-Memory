@@ -11,19 +11,25 @@ let previousTarget = null;
 let delay = 1200;
 var userHasClicked = false;
 
-let steps = document.querySelector('.steps');
 let matchCount = 0;
+
 let popup = document.getElementById('winpop');
 let close = document.querySelector('.close');
 
 const reload = document.getElementById('reload');
-
 const game = document.getElementById('game');
 const grid = document.createElement('section');
 
+/* Steps Count */
+let stepsCount = 1;
+var steps = document.querySelector('.steps');
+var finalMove = '';
+
+/* Timer */
 var second = 0, minute = 0;
 var timer = document.querySelector('.timer');
 var interval = '';
+var finalTime = '';
 
 grid.setAttribute('class', 'grid');
 game.appendChild(grid);
@@ -48,7 +54,7 @@ gameGrid.forEach(item => {
   card.appendChild(back);
 });
 
-/* Counts all the matches and if you have picked all 24 cards you get popup */
+/* Counts all the matches and if you have picked all 24 cards you get the popup */
 const match = () => {
   const selected = document.querySelectorAll('.selected');
   selected.forEach(card => {
@@ -69,6 +75,7 @@ const resetGuesses = () => {
   secondGuess = '';
   count = 0;
   previousTarget = null;
+  
 
   var selected = document.querySelectorAll('.selected');
   selected.forEach(card => {
@@ -78,10 +85,10 @@ const resetGuesses = () => {
 
 /* Checks if the clicks have a match or not */
 grid.addEventListener('click', event => {
-    if (!userHasClicked) {
-        startTimer();
-        userHasClicked = true;
-    }
+  if (!userHasClicked) {
+      startTimer();
+      userHasClicked = true;
+  }
   const clicked = event.target;
 
   if (
@@ -93,6 +100,7 @@ grid.addEventListener('click', event => {
 
   if (count < 2) {
     count++;
+    moveCounter();
     if (count === 1) {
       firstGuess = clicked.parentNode.dataset.name;
       console.log(firstGuess);
@@ -113,10 +121,16 @@ grid.addEventListener('click', event => {
   }
 });
 
-/* Pop up code */
+/* Pop-up screen */
 function congratz () {
-        popup.classList.add('show');
-        closeModal();
+  finalTime = timer.innerHTML;
+  finalMove = steps.innerHTML;
+  popup.classList.add('show');
+
+  document.getElementById("totalMove").innerHTML = finalMove;
+  document.getElementById("totalTime").innerHTML = finalTime;
+
+  closeModal();
 }
 
 function closeModal () {
@@ -125,7 +139,7 @@ function closeModal () {
     })
 }
 
-
+/* Timer that counts the seconds */
 function startTimer() {
     interval = setInterval(function() {
         timer.innerHTML = minute+"mins "+second+"secs";
@@ -143,15 +157,8 @@ function startTimer() {
 
 /* Move Counter */
 function moveCounter () {
-    count++;
-    matchCount.innerHTML = steps;
-
-    if (count == 1) {
-        second = 0;
-        minute = 0;
-        hour = 0;
-      
-    }
+  steps.innerHTML = stepsCount + " steps";
+  stepsCount++;
 }
 
 /*

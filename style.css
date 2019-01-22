@@ -1,7 +1,7 @@
 *, *::before, *::after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-} 
+}
 body {
     margin: 5px 0;
     background: black;
@@ -38,7 +38,7 @@ body {
         backface-visibility: hidden;
 }
 .front {
-    background: black url('img/baksida_gold4.jpg') no-repeat center center / contain;
+    background: black url('img/baksida_goldcoin.jpg') no-repeat center center / contain;
 }
 .back {
     -webkit-transform: rotateY(180deg);
@@ -78,7 +78,7 @@ h1 {
 }
 
 /*
-*   Pop out window 
+*   Pop out window
 */
 .overlay {
     position: fixed;
@@ -86,9 +86,10 @@ h1 {
     bottom: 0;
     left: 0;
     right: 0;
-    background: white;
+    background: rgb(199, 89, 37);
     transition: opacity 500ms;
-    visibility: hidden;
+    visibility: visible;
+
 }
 .overlay:target {
 	visibility: visible;

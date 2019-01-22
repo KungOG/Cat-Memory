@@ -35,8 +35,8 @@ const catsArray = [{
         'img' : 'img/tiger_b.jpg'
     },
     {
-        'name' : 'zefyrus',
-        'img' : 'img/zefyrus_b.jpg'
+        'name' : 'zephyrus',
+        'img' : 'img/zephyrus_b.jpg'
     },
     {
         'name' : 'percy',

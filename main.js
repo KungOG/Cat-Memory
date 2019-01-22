@@ -1,4 +1,4 @@
-import cats from './cats.js'
+import catsArray from './cats.js'
 
 const gameGrid = catsArray
   .concat(catsArray)

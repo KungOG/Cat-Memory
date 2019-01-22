@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="icon" href="img/catback.ico" type="image/icon" />
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-  <title>Cats!</title>
+  <title>Cats-a-strophic!</title>
 </head>
+
 <body>
-    <div class="overlayh1"><h1 unselectable="on" class="noselect">Remember the Cats-game!</h1></div>
+  <div class="overlayh1">
+    <h1 unselectable="on" class="noselect">Remember the Cats-game!</h1>
+  </div>
 
-    <div class="steps"></div>
-    <div class="timer"></div>
+  <div class="steps"></div>
+  <div class="timer"></div>
 
-    <div id="game"></div>
-    <div id="winpop" class="overlay">
-        <div class="popout">
-            <h2>Wooho! Congratulations!</h2>
-            <a class="close" href="#">r</a>
-            <div class="innerPop">
-                <p>Frikkin' catsey! You got 'em all!</p>
-                <p>You made <span id=totalMove> </span></p>
-                <p>in <span id=totalTime> </span> </p>
-            </div>
-            <button id="reload"><p>Play again?</p></button>
-        </div>
+  <div id="game"></div>
+  <div id="winpop" class="overlay">
+    <div class="popout">
+      <h2>Wooho! Congratulations!</h2>
+      <a class="close" href="#">r</a>
+      <div class="innerPop">
+        <p>Frikkin' catsey! You got 'em all!</p>
+        <p>You made <span id=totalMove> </span> steps!</p>
+        <p>in <span id=totalTime> </span> </p>
+      </div>
+      <button id="reload">
+        <p>Play again?</p>
+      </button>
     </div>
-    <script src="main.js" type="module"></script>
+  </div>
+  <script src="main.js" type="module"></script>
 
-        </div>
 </body>
 </html>

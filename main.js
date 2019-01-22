@@ -195,7 +195,7 @@ function moveCounter () {
     }
 }
 
-
+/*
 function restartGame() {
   // reload?
   //mdn: Force reloading the current page from the server
@@ -203,3 +203,4 @@ location.reload(true);
 }
 
 reload.addEventListener('click', restartGame())
+*/

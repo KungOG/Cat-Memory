@@ -56,6 +56,7 @@ let secondGuess = '';
 let count = 0;
 let previousTarget = null;
 let delay = 1200;
+var userHasClicked = false;
 
 let steps = document.querySelector('.steps');
 let matchCount = 0;
@@ -66,6 +67,10 @@ const reload = document.getElementById('reload');
 
 const game = document.getElementById('game');
 const grid = document.createElement('section');
+
+var second = 0, minute = 0;
+var timer = document.querySelector('.timer');
+var interval = '';
 
 grid.setAttribute('class', 'grid');
 game.appendChild(grid);
@@ -99,7 +104,7 @@ const match = () => {
     if (matchCount == 2) {
         congratz();
         closeModal();
-        startTimer();
+        clearInterval(interval);
         console.log('It is a match!');
     }
   });
@@ -120,7 +125,10 @@ const resetGuesses = () => {
 
 /* Checks if the clicks have a match or not */
 grid.addEventListener('click', event => {
-
+    if (!userHasClicked) {
+        startTimer();
+        userHasClicked = true;
+    }
   const clicked = event.target;
 
   if (
@@ -164,9 +172,7 @@ function closeModal () {
     })
 }
 
-var second = 0, minute = 0;
-var timer = document.querySelector('.timer');
-var interval;
+
 function startTimer() {
     interval = setInterval(function() {
         timer.innerHTML = minute+"mins "+second+"secs";
@@ -191,7 +197,7 @@ function moveCounter () {
         second = 0;
         minute = 0;
         hour = 0;
-        startTimer();
+      
     }
 }
 

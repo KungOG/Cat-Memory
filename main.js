@@ -99,7 +99,6 @@ const match = () => {
     if (matchCount == 2) {
         congratz();
         closeModal();
-        startTimer();
         console.log('It is a match!');
     }
   });
@@ -120,7 +119,7 @@ const resetGuesses = () => {
 
 /* Checks if the clicks have a match or not */
 grid.addEventListener('click', event => {
-
+    startTimer();
   const clicked = event.target;
 
   if (
@@ -191,7 +190,7 @@ function moveCounter () {
         second = 0;
         minute = 0;
         hour = 0;
-        startTimer();
+      
     }
 }
 

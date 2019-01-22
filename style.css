@@ -169,8 +169,8 @@ h1 {
 }
 @media only screen and (max-width: 500px) {
     .card, .back, .front {
-        height: auto;
-        width: 0;
+        height: 75px;
+        width: 75px;
     }
     body {
     overflow-y: auto;

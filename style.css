@@ -45,7 +45,7 @@ p {
         backface-visibility: hidden;
 }
 .front {
-    background: black url('img/baksida_gold4.jpg') no-repeat center center / contain;
+    background: black url('img/baksida_goldcoin.jpg') no-repeat center center / contain;
 }
 .back {
     -webkit-transform: rotateY(180deg);
@@ -106,8 +106,11 @@ h1 {
     bottom: 0;
     left: 0;
     right: 0;
+    background: rgb(199, 89, 37);
     transition: opacity 500ms;
     visibility: visible;
+
+    visibility: hidden;
 }
 .overlay:target {
 	visibility: visible;
@@ -116,7 +119,7 @@ h1 {
 .popout {
     margin: 70px auto;
     padding: 20px;
-    background-color: white;
+    background: white;
     border-radius: 5px;
     width: 85%;
     position: relative;

@@ -46,8 +46,8 @@ h1 {
     margin: 0 1rem;
 }
 
-/* 
-*   Card-grid 
+/*
+*   Card-grid
 */
 .grid {
     max-width: 1000px;
@@ -103,17 +103,30 @@ h1 {
 *   Rule pop out
 */
 .rules {
+    display: inline-block;
     position: top;
     color: white;
+    padding: 0 10%;
+    }
+
+h3 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 5%;
 }
+
 .popText {
     position: absolute;
     visibility: hidden;
-    top: 200px;
-    bottom: 200px;
-    left: 200px;
-    right: 200px;
+    padding: 5%;
+    top: 10%;
+    left: 20%;
+    right: 20%;
     background: rgb(199, 89, 37);
+    border-radius: 5%;
     transition: opacity 500ms;
     z-index: 50;
     opacity: 1;

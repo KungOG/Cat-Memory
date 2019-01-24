@@ -161,6 +161,7 @@ var rules = document.getElementById("rulelink").addEventListener('click', theRul
 var rulepopup = document.getElementById("rulesPop");
 var closebtn = document.getElementById("ruleclose").addEventListener('click', theRuless);
 
+/* Show the Rules */
 function theRuless () {
   rulepopup.classList.toggle("show");
 }

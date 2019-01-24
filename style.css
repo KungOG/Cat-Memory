@@ -33,7 +33,7 @@ h1 {
     top: 0;
 }
 .overlayh1 {
-  pointer-events: none;
+    pointer-events: none;
 }
 .steps {
     color: white;
@@ -103,13 +103,20 @@ h1 {
 *   Rule pop out
 */
 .rules {
-    position: fixed;
+    position: top;
+    color: white;
+}
+.popText {
+    position: absolute;
+    visibility: hidden;
     top: 200px;
     bottom: 200px;
     left: 200px;
     right: 200px;
     background: rgb(199, 89, 37);
     transition: opacity 500ms;
+    z-index: 50;
+    opacity: 1;
 }
 
 /*
@@ -147,7 +154,8 @@ h1 {
 }
 .popout h2 {
     font-family: 'Amatic SC', cursive;
-    margin-top: center;
+    justify-content: center;
+    display: flex;
     color: black;
     font-size: 50px;
 }
@@ -157,8 +165,10 @@ h1 {
 	text-align: center;
 }
 #reload {
-  padding: 15px;
-  margin: 15px auto;
+    padding: 15px;
+    margin: 15px auto;
+    justify-content: center;
+    display: flex;
 }
 .show {
     visibility: visible !important;
@@ -170,34 +180,34 @@ h1 {
 
 /* iPhone 5 */
 @media only screen and (min-width: 100px) and (max-width: 350px) {
-     .card, .back, .front {
+    .card, .back, .front {
         height: 70px;
         width: 70px;
     }
     h1 {
-    font-size: 7em;
+        font-size: 7em;
     }
 }
 
 /* galaxy S5  */
 @media only screen and (min-width: 350px) and (max-width: 370px) {
-     .card, .back, .front {
+    .card, .back, .front {
         height: 70px;
         width: 70px;
     }
     h1 {
-    font-size: 6em;
-        }
+        font-size: 6em;
+    }
 }
 
 /* iPhone X */
 @media only screen and (min-width: 370px) and (max-width: 400px) {
-     .card, .back, .front {
+    .card, .back, .front {
         height: 83px;
         width: 83px;
     }
     h1 {
-    font-size: 8em;
+        font-size: 8em;
     }
 }
 
@@ -208,11 +218,11 @@ h1 {
         width: 90px;
     }
     body {
-    overflow-y: auto;
+        overflow-y: auto;
     }
     h1 {
-    font-size: 9em;
-      }
+        font-size: 9em;
+    }
 }
 
 /* Multi Sizes */
@@ -222,11 +232,11 @@ h1 {
         width: 100px;
     }
     body {
-    overflow-y: auto;
+        overflow-y: auto;
     }
     h1 {
-    font-size: 9em;
-      }
+        font-size: 9em;
+    }
 }
 @media only screen and (min-width: 666px) and (max-width: 754px) {
     .card, .back, .front {
@@ -234,11 +244,11 @@ h1 {
         width: 110px;
     }
     body {
-    overflow-y: auto;
+        overflow-y: auto;
     }
     h1 {
-    font-size: 9em;
-      }
+        font-size: 9em;
+    }
 }
 @media only screen and (min-width: 754px) and (max-width: 850px) {
     .card, .back, .front {
@@ -246,23 +256,23 @@ h1 {
         width: 120px;
     }
     body {
-    overflow-y: auto;
+        overflow-y: auto;
     }
     h1 {
-    font-size: 11em;
-      }
+        font-size: 11em;
     }
+}
 @media only screen and (min-width: 850px) and (max-width: 966px) {
     .card, .back, .front {
         height: 130px;
         width: 130px;
     }
     body {
-    overflow-y: auto;
+        overflow-y: auto;
     }
     h1 {
-    font-size: 12em;
-      }
+        font-size: 12em;
+    }
 }
 
 /* iPad */
@@ -272,7 +282,7 @@ h1 {
         width: 150px;
     }
     body {
-    overflow-y: auto;
+        overflow-y: auto;
     }
 }
 
@@ -283,9 +293,9 @@ h1 {
         width: 200px;
     }
     body {
-    overflow-y: auto;
+        overflow-y: auto;
     }
     h1 {
-    font-size: 20em;
+        font-size: 20em;
     }
 }

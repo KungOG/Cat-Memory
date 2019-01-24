@@ -9,7 +9,8 @@ body {
     margin: 5px 0;
     background: black;
     overflow: hidden;
-
+    font-family: verdana;
+    font-size: 0.7em;
 }
 p {
     font-family: 'Amatic SC', cursive;
@@ -178,7 +179,7 @@ h3 {
 	text-align: center;
 }
 #reload {
-    padding: 15px;
+    padding: 2% 5%;
     margin: 15px auto;
     justify-content: center;
     display: flex;

@@ -70,7 +70,7 @@ const resetGuesses = () => {
   secondGuess = '';
   count = 0;
   previousTarget = null;
-  
+
 
   var selected = document.querySelectorAll('.selected');
   selected.forEach(card => {
@@ -148,12 +148,6 @@ function moveCounter () {
   stepsCount++;
 }
 
-/* Close Rule Screen */
-document.getElementById("rulesPop").addEventListener('click', theRules);
-function theRules () {
-  popText.classList.toggle("show");
-}
-
 /* Restart the game button */
 document.getElementById('reload').addEventListener('click', restartGame);
 document.getElementById('reloadGame').addEventListener('click', restartGame);
@@ -162,4 +156,11 @@ function restartGame() {
   location.reload();
 }
 
+/* Close Rule Screen */
+var rules = document.getElementById("rulelink").addEventListener('click', theRuless);
+var rulepopup = document.getElementById("rulesPop");
+var closebtn = document.getElementById("ruleclose").addEventListener('click', theRuless);
 
+function theRuless () {
+  rulepopup.classList.toggle("show");
+}

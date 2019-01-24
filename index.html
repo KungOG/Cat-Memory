@@ -14,9 +14,10 @@
   <div class="overlayh1">
     <h1 unselectable="on" class="noselect">Remember the Cats-game!</h1>
   </div>
-  <div class="rules" class="overlay" onclick="theRules()">
+  <div id="reloadGame" class="rules">Restart</div>
+  <div id="theRules" class="rules" class="overlay" onclick="theRules()">
     Rules
-    <span class="popText" id="rulesPop">
+    <span id="rulesPop" class="popText">
     <h3>The Catsey Rules</h3>
     <p>Pair 2 cats and there is a total of  as fast as possible.</p>
     </span>
@@ -43,8 +44,10 @@
 </body>
 </html>
 <script>
+/* Close Rule Screen */
 var rules = document.getElementById("rulesPop");
 function theRules () {
   rules.classList.toggle("show");
-  }
+}
+
 </script>

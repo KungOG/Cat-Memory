@@ -32,6 +32,7 @@ h1 {
     z-index: 1;
     position: absolute;
     top: 0;
+    padding: 0 10%;
 }
 .overlayh1 {
     pointer-events: none;
@@ -103,12 +104,15 @@ h1 {
 /*
 *   Rule pop out
 */
+#reloadGame {
+    padding: 0 1% 0 2%;  
+}
 .rules {
     display: inline-block;
-    position: top;
     color: white;
-    padding: 0 10%;
-    }
+    cursor: pointer;
+    text-align: center;
+}
 
 h3 {
   font-family: 'Amatic SC', cursive;

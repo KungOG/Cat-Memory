@@ -56,7 +56,7 @@ const match = () => {
   selected.forEach(card => {
     card.classList.add('match');
     matchCount++
-    if (matchCount == 2) {
+    if (matchCount == 24) {
         congratz();
         startTimer();
         console.log('It is a match!');
@@ -125,8 +125,6 @@ function congratz () {
   document.getElementById("totalMove").innerHTML = finalMove;
   document.getElementById("totalTime").innerHTML = finalTime;
 }
-/* Close Rule Screen */
-
 
 /* Timer that counts the seconds */
 function startTimer() {
@@ -150,8 +148,18 @@ function moveCounter () {
   stepsCount++;
 }
 
+/* Close Rule Screen */
+document.getElementById("rulesPop").addEventListener('click', theRules);
+function theRules () {
+  popText.classList.toggle("show");
+}
+
 /* Restart the game button */
 document.getElementById('reload').addEventListener('click', restartGame);
+document.getElementById('reloadGame').addEventListener('click', restartGame);
+
 function restartGame() {
   location.reload();
 }
+
+

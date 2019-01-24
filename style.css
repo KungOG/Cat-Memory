@@ -169,10 +169,7 @@ h1 {
 *   Responsive
 */
 
-
-
-
-/*iphone 5 */
+/* iPhone 5 */
 @media only screen and (min-width: 100px) and (max-width: 350px) {
      .card, .back, .front {
         height: 70px;
@@ -183,7 +180,7 @@ h1 {
     }
 }
 
-/*galaxy s5  */
+/* galaxy S5  */
 @media only screen and (min-width: 350px) and (max-width: 370px) {
      .card, .back, .front {
         height: 70px;
@@ -194,7 +191,7 @@ h1 {
         }
 }
 
-/*iphone X  iphone 5*/
+/* iPhone X */
 @media only screen and (min-width: 370px) and (max-width: 400px) {
      .card, .back, .front {
         height: 83px;
@@ -205,7 +202,7 @@ h1 {
     }
 }
 
-/*iphone fixed 6/7/  pixel2*/
+/* iPhone fixed 6/7  Pixel 2 */
 @media only screen and (min-width: 400px) and (max-width: 600px) {
     .card, .back, .front {
         height: 90px;
@@ -219,7 +216,7 @@ h1 {
       }
 }
 
-/**/
+/* Multi Sizes */
 @media only screen and (min-width: 600px) and (max-width: 666px) {
     .card, .back, .front {
         height: 100px;
@@ -233,7 +230,7 @@ h1 {
       }
 }
 
-/**/
+
 @media only screen and (min-width: 666px) and (max-width: 754px) {
     .card, .back, .front {
         height: 110px;
@@ -246,7 +243,7 @@ h1 {
     font-size: 9em;
       }
 }
-/**/
+
 @media only screen and (min-width: 754px) and (max-width: 850px) {
     .card, .back, .front {
         height: 120px;
@@ -259,7 +256,7 @@ h1 {
     font-size: 11em;
       }
     }
-/**/
+
 @media only screen and (min-width: 850px) and (max-width: 966px) {
     .card, .back, .front {
         height: 130px;
@@ -274,7 +271,7 @@ h1 {
 }
 
 
-/*ipad*/
+/* iPad */
 @media only screen and (width: 768px) {
     .card, .back, .front {
         height: 150px;
@@ -285,7 +282,7 @@ h1 {
     }
 }
 
-/*/ipad pro*/
+/* iPad Pro */
 @media only screen and (width: 1024px) {
     .card, .back, .front {
         height: 200px;

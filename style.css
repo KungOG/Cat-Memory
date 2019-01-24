@@ -164,7 +164,6 @@ h1 {
     visibility: visible !important;
 }
 
-
 /*
 *   Responsive
 */
@@ -229,8 +228,6 @@ h1 {
     font-size: 9em;
       }
 }
-
-
 @media only screen and (min-width: 666px) and (max-width: 754px) {
     .card, .back, .front {
         height: 110px;
@@ -243,7 +240,6 @@ h1 {
     font-size: 9em;
       }
 }
-
 @media only screen and (min-width: 754px) and (max-width: 850px) {
     .card, .back, .front {
         height: 120px;
@@ -256,7 +252,6 @@ h1 {
     font-size: 11em;
       }
     }
-
 @media only screen and (min-width: 850px) and (max-width: 966px) {
     .card, .back, .front {
         height: 130px;
@@ -269,7 +264,6 @@ h1 {
     font-size: 12em;
       }
 }
-
 
 /* iPad */
 @media only screen and (width: 768px) {

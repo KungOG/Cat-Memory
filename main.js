@@ -10,12 +10,9 @@ let count = 0;
 let previousTarget = null;
 let delay = 1200;
 var userHasClicked = false;
-
 let matchCount = 0;
 
 let popup = document.getElementById('winpop');
-let close = document.querySelector('.close');
-
 const game = document.getElementById('game');
 const grid = document.createElement('section');
 
@@ -61,7 +58,6 @@ const match = () => {
     matchCount++
     if (matchCount == 2) {
         congratz();
-        closeModal();
         startTimer();
         console.log('It is a match!');
     }
@@ -128,15 +124,9 @@ function congratz () {
 
   document.getElementById("totalMove").innerHTML = finalMove;
   document.getElementById("totalTime").innerHTML = finalTime;
-
-  closeModal();
 }
+/* Close Rule Screen */
 
-function closeModal () {
-    close.addEventListener('click', function(e){
-        popup.classList.remove('show');
-    })
-}
 
 /* Timer that counts the seconds */
 function startTimer() {
@@ -160,8 +150,8 @@ function moveCounter () {
   stepsCount++;
 }
 
+/* Restart the game button */
 document.getElementById('reload').addEventListener('click', restartGame);
-
 function restartGame() {
   location.reload();
 }

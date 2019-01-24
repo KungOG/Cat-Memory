@@ -1,5 +1,5 @@
 import catsArray from './cats.js'
-
+/* Imports the Pictures, sort them and then randomize it */
 const gameGrid = catsArray
   .concat(catsArray)
   .sort(() => 0.5 - Math.random());

@@ -14,14 +14,15 @@
   <div class="overlayh1">
     <h1 unselectable="on" class="noselect">Remember the Cats-game!</h1>
   </div>
-  <div class="steps"></div>
-  <div class="timer"></div>
-  <div class="rules" onclick="theRules()">
+  <div class="rules" class="overlay" onclick="theRules()">
     Rules
     <span class="popText" id="rulesPop">
-    Rules, rules rules
+    <h3>The Catsey Rules</h3>
+    <p>Pair 2 cats and there is a total of  as fast as possible.</p>
     </span>
-  </div>
+ </div>
+  <div class="steps"></div>
+  <div class="timer"></div>
 
   <div id="game"></div>
   <div id="winpop" class="overlay">
@@ -29,8 +30,8 @@
       <h2>Wooho! Congratulations!</h2>
       <div class="innerPop">
         <p>Frikkin' catsey! You got 'em all!</p>
-        <p>You made <span id=totalMove> </span> steps!</p>
-        <p>in <span id=totalTime> </span> </p>
+        <p>You made <span id=totalMove> </span> in</p>
+        <p><span id=totalTime> </span>, good job!</p>
       </div>
       <button id="reload">
         <p>Play again?</p>

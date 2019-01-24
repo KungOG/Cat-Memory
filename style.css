@@ -105,7 +105,7 @@ h1 {
 *   Rule pop out
 */
 #reloadGame {
-    padding: 0 1% 0 2%;  
+    padding: 0 1% 0 2%;
 }
 .rules {
     display: inline-block;
@@ -137,6 +137,20 @@ h3 {
     opacity: 1;
 }
 
+
+/* The Close Button */
+#ruleclose {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#ruleclose:hover,
+#ruleclose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 /*
 *   Pop out window
 */

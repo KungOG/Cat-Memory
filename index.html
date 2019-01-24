@@ -15,13 +15,13 @@
     <h1 unselectable="on" class="noselect">Remember the Cats-game!</h1>
   </div>
   <div id="reloadGame" class="rules">Restart</div>
-  <div id="theRules" class="rules" class="overlay" onclick="theRules()">
-    Rules
-    <span id="rulesPop" class="popText">
-    <h3>The Catsey Rules</h3>
-    <p>Pair 2 cats to get a match. Each time you match they will fade out. 
-        There is a total of 12 different cats.
-        Try pick them as fast as possible. Good luck.</p>
+  <div id="theRules" class="rules">
+    <div id="rulelink">Rules</div>
+    <span id="rulesPop" class="popText" class="overlay">
+    <span id="ruleclose">&times;</span>
+    <h3>The Catsey Rules - Memory</h3>
+    <p>Pair the same cats as fast as possible, and on so few move as possible.
+       There is a total of 12 cats.</p>
     </span>
  </div>
   <div class="steps"></div>
@@ -45,11 +45,3 @@
 
 </body>
 </html>
-<script>
-/* Close Rule Screen */
-var rules = document.getElementById("rulesPop");
-function theRules () {
-  rules.classList.toggle("show");
-}
-
-</script>

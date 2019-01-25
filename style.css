@@ -100,7 +100,9 @@ h1 {
 .match .front {
     background: none !important;
 }
-
+section {
+    pointer-events: none
+}
 /*
 *   The Styling for buttons
 */

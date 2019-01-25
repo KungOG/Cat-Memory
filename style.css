@@ -49,7 +49,7 @@ h1 {
 }
 
 /*
-*   Card-grid
+*   Card-grid and it's style
 */
 .grid {
     max-width: 1000px;
@@ -102,18 +102,24 @@ h1 {
 }
 
 /*
-*   Rule pop out
+*   The Styling for buttons
 */
+
+/* Restart button */
 #reloadGame {
-    padding: 0 1% 0 2%;
+    padding: 0 1% 0 2%; 
+    cursor: pointer; 
+}
+
+/* Rule pop out */
+#rulelink {
+    cursor: pointer;
 }
 .rules {
     display: inline-block;
     color: white;
-    cursor: pointer;
     text-align: center;
 }
-
 h3 {
   font-family: 'Amatic SC', cursive;
   font-size: 50px;
@@ -122,7 +128,6 @@ h3 {
   margin-top: 0;
   margin-bottom: 5%;
 }
-
 .popText {
     position: absolute;
     visibility: hidden;
@@ -137,20 +142,18 @@ h3 {
     opacity: 1;
 }
 
-
 /* The Close Button */
-#ruleclose {
+.close {
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
-
-#ruleclose:hover,
-#ruleclose:focus {
+.close:hover, .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
+
 /*
 *   Pop out window
 */

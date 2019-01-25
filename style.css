@@ -137,16 +137,14 @@ h3 {
     opacity: 1;
 }
 
-
 /* The Close Button */
-#ruleclose {
+.close {
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-#ruleclose:hover,
-#ruleclose:focus {
+.close:hover, .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;

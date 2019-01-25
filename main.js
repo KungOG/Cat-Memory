@@ -164,3 +164,8 @@ var closebtn = document.getElementById("ruleclose").addEventListener('click', th
 function theRuless () {
   rulepopup.classList.toggle("show");
 }
+
+var winclose =document.getElementById('winclose').addEventListener('click', theWin);
+function theWin() {
+      popup.classList.toggle("show");
+}

@@ -1,49 +1,49 @@
 const catsArray = [{
-        'name' : 'fenris',
+        'name' : 'Fenris',
         'img' : 'img/fenris_y.jpg'
     },
     {
-        'name' : 'findus',
+        'name' : 'Findus',
         'img' : 'img/findus_g.jpg'
     },
     {
-        'name' : 'lotus',
+        'name' : 'Lotus',
         'img' : 'img/lotus_g.jpg'
     },
     {
-        'name' : 'luvan',
+        'name' : 'Luvan',
         'img' : 'img/luvan_p.jpg'
     },
     {
-        'name' : 'norna',
+        'name' : 'Norna',
         'img' : 'img/norna_o.jpg'
     },
     {
-        'name' : 'corona',
+        'name' : 'Corona',
         'img' : 'img/corona_b.jpg'
     },
     {
-        'name' : 'rut',
+        'name' : 'Rut',
         'img' : 'img/rut_r.jpg'
     },
     {
-        'name' : 'samus',
+        'name' : 'Samus',
         'img' : 'img/samus_y.jpg'
     },
     {
-        'name' : 'tiger',
+        'name' : 'Tiger',
         'img' : 'img/tiger_b.jpg'
     },
     {
-        'name' : 'zefyrus',
+        'name' : 'Zefyrus',
         'img' : 'img/zephyrus_b.jpg'
     },
     {
-        'name' : 'percy',
+        'name' : 'Percy',
         'img' : 'img/percy_t.jpg'
     },
     {
-        'name' : 'octarine',
+        'name' : 'Octarine',
         'img' : 'img/octarine_b.jpg'
     }
 ];
